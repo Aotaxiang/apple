@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Javascript loan calculator</title>
+        <style>
+        h1{
+            border-radius: 10px;
+            width:30px;
+            border:1px solid  blue;
+            color:blueviolet;
+        }
+        div{
+            height: 300px;
+            width: 0px;
+            background-color: brown;
+            animation: myfirst 3s;
+            -webkit-animation:myfirst 3s;
+            position: relative;
+        }
+        @-webkit-keyframes myfirst
+        {
+            0% {width: 10px;}
+            /*50% {width: 500px;}*/
+            100%{background-color:cyan;}
+        }
+        </style>
+    </head>
+    <body>
+        <h1>hhhh</h1>
+        <div></div>
+        <table>
+            <tr>
+                <th>Enter loan Data</th>
+                <td></td>
+                <th>Loan balance </th>
+            </tr><td>Amount of the loan($)</td>
+                <td><input id="amount" onchange="calculate();"</td>
+                <td rowspan=8>
+                    <canvas id = "graph" width="400" height="250"></canvas></td>
+                
+        </table>
+    </body>
+</html>
